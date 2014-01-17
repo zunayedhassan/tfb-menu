@@ -1,0 +1,33 @@
+body {
+    font-family: georgia, serif;
+}
+
+nav {
+    font-family: helvetica, sans-serif;
+    background: lightblue;
+}
+
+code {
+    font-family: consolas, monospace;
+    display: inline;
+}
+
+pre {
+    background: #FFEAA6;
+    display: block;
+    padding: 1em;
+    max-width: 70%;
+    margin-left: 1em;
+    overflow: auto;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 640px) {
+    pre {
+        max-width: 100%;
+        margin: 1em;
+    }
+}

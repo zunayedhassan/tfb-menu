@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>TFB Responsive Menu</title>
+        
+        <!-- External stylesheet -->
+        <link rel="stylesheet" type="text/css" media="all" href="demo/css/demo.css" />
+        
+        <!-- tfb-menu -->
+        <link rel="stylesheet" type="text/css" media="all" href="dist/css/tfb-menu-style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="dist/css/tfb-menu-theme.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="dist/css/icomoon.css" />
+    </head>
+    
+    <body>
+        <nav>
+            <!-- This list will be our menu -->
+            <ul id="my-menu">
+                <li>
+                    <a href="#">Menu Item 1</a>
+                </li>
+                
+                <li>
+                    <a href="#">Menu Item 2</a>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">Submenu Item 1</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 2</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 3</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 4</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Menu Item 3</a>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">Submenu Item 1</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 2</a>
+                            
+                            <ul>
+                                <li>
+                                    <a href="#">Level 3 Item 1</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Level 3 Item 2</a>
+                                    
+                                    <ul>
+                                        <li>
+                                            <a href="#">Level 4 Item 1</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Level 4 Item 2</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Level 4 Item 3</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">Level 4 Item 4</a>
+                                            
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Level 5 Item 1</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Level 5 Item 2</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Level 5 Item 3</a>
+                                                    
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Level 6 Item 1</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">Level 6 Item 2</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">Level 5 Item 4</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Level 3 Item 3</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Level 3 Item 4</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 3</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Submenu Item 4</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Menu Item 4</a>
+                </li>
+                
+                <li>
+                    <a href="#">Menu Item 5</a>
+                </li>
+                
+                <li>
+                    <a href="#">Menu Item 6</a>
+                    
+                    <ul>
+                        <li>
+                            <a href="#">Level 2 Item 1</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Level 2 Item 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <article>
+            <header>
+                <h1>TFB Responsive Menu</h1>
+            </header>
+            
+            <h2>Usage</h2>
+            <p>On header add these</p>
+                
+            <pre>
+                <code>
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/tfb-menu-style.css" /&gt;<br />
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/tfb-menu-theme.css" /&gt;<br />
+&lt;link rel="stylesheet" type="text/css" media="all" href="css/icomoon.css" /&gt;
+                </code>
+            </pre>
+            
+            <p>Now, on body load jQuery and tfb-menu-script.</p> 
+            <pre>
+                <code>
+
+&lt;!-- External script --&gt;<br />
+&lt;script type="text/javascript" src="js/jquery-2.0.3.min.js"&gt;&lt;/script&gt;<br />
+<br />
+&lt;!-- tfb-menu --&gt;<br />
+&lt;script type="text/javascript" src="js/tfb-menu-script.js"&gt;&lt;/script&gt;<br />
+&lt;script type="text/javascript"&gt;<br />
+&#160;&#160;&#160;&#160;jQuery(document).ready(function() {<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;TfbMenu('#my-menu');&#160;&#160;&#160;&#160;//&#160;Optional parameter TfbMenu('#my-menu', false, false);<br />
+&#160;&#160;&#160;&#160;});<br />
+&lt;/script&gt;
+
+                </code>
+            </pre>
+            
+        </article>
+        
+        <!-- External script -->
+        <script type="text/javascript" src="demo/js/jquery-2.0.3.min.js"></script>
+        
+        <!-- tfb-menu -->
+        <script type="text/javascript" src="dist/js/tfb-menu-script.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                TfbMenu('#my-menu');
+            });
+        </script>
+        
+        <footer>
+            by <cite><a href="http://zunayedhassan.3owl.com">Mohammod Zunayed Hassan</a> - <a href="mailto:ZunayedHassanBD@gmail.com?Subject=Feedback%20on%20tfb-menu" target="_top">zunayed-hassan@live.com</a></cite>
+        </footer>
+    </body>
+</html>
