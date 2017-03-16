@@ -1,4 +1,5 @@
-#NOTE: This project is no longer maintained, please visit https://github.com/zunayedhassan/zh-menu as its alternative
+#NOTE
+This project is no longer maintained, please visit https://github.com/zunayedhassan/zh-menu as its alternative
 
 tfb-menu
 ========
